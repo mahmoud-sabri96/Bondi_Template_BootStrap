@@ -1,0 +1,320 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --green-color-opac2: hsla(178, 63%, 51%, 0.6);
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem;
+    transition: .4s;
+}
+
+.main-btn:hover {
+    color: var(--green-color);
+    font-size: bold;
+    letter-spacing: 1px;
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+/* =============================================== */
+/* Start NavBar */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color)
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+
+/* End NavBar */
+/* Start Landing */
+.landing {
+    /* background-color: var(--dark-color); */
+    background-image: url("../imgs/landing.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    min-height: calc(70vh - 72px);
+}
+
+.overlay {
+    background-color: hsla(216, 43%, 17%, 0.7);
+}
+
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
+
+/* End Features */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li.active {
+    background-color: var(--red-color);
+    color: var(--);
+    border-radius: 8px;
+}
+
+.our-work ul li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.our-work ul li.active:hover {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+
+.our-work .box {
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: var(--green-color-opac2);
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    transition: .4s;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120px;
+}
+
+.our-work .box:hover::before {
+    left: 0%;
+}
+
+/* Start Stuff */
+.stuff .description {
+    width: 500px;
+}
+
+/* End Stuff */
+/* Start Team */
+section.our-team {
+    background-color: var(--section-color);
+}
+
+.our-team h2 {
+    color: var(--yellow-color);
+}
+
+.our-team .box h4 {
+    background-color: var(--green-color);
+}
+
+/* End Team */
+/* Start project */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* End project */
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.subscribe input[type="email"]:focus {
+    outline: none;
+    caret-color: var(--dark-color);
+}
+
+.subscribe input[type="email"]::placeholder {
+    color: #fff;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+}
+
+/* end Subscribe */
+/* Start footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+footer .copyright span:nth-child(1) {
+    color: var(--green-color);
+}
+
+footer .copyright span.bondi {
+    color: var(--yellow-color);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer .facebook {
+    background-color: #1877f2;
+}
+
+footer .twitter {
+    background-color: #1da1f2;
+}
+
+footer .linkedin {
+    background-color: #0077b5;
+}
+
+footer .youtube {
+    background-color: #ff0000;
+}
+
+/* End footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!--======================== My Design footer =================--> */
+
+/* Start Footer */
+/* footer {
+    background-color: var(--dark-color);
+}
+
+footer .logo .creator {
+    color: var(--green-color);
+}
+
+footer .logo .creator+span {
+    color: var(--yellow-color);
+}
+
+
+footer .social li:nth-child(1) a svg {
+    color: #1877f2;
+}
+
+footer .social li:nth-child(2) a svg {
+    color: #1da1f2;
+}
+
+footer .social li:nth-child(3) a svg {
+    color: #dd4b39;
+}
+
+footer .social li:nth-child(4) a svg {
+    color: #ff0000;
+} */
+
+/* End Footer */
